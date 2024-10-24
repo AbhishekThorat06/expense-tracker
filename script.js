@@ -56,13 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollToTop();
     }
 
-    function clearExpenses() {
-        if (confirm("Are you sure you want to clear all expenses?")) {
-            expenses = [];
-            localStorage.removeItem('expenses');
-            renderExpenses(expenses);
-        }
-    }
+    
 
     function sortExpenses(by) {
         if (by === 'amount') {
