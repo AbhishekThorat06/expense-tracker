@@ -47,15 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderExpenses(expenses);
     };
 
-    function filterExpenses() {
-        const category = filterCategory.value.toLowerCase();
-        const filteredExpenses = expenses.filter(expense => {
-            return (!category || expense.category.toLowerCase().includes(category));
-        });
-        renderExpenses(filteredExpenses);
-        scrollToTop();
-    }
-
+    
      function clearExpenses() {
         if (confirm("Are you sure you want to clear all expenses?")) {
             expenses = [];
