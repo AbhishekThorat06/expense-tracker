@@ -1,7 +1,7 @@
 /* General Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* Soft blue gradient */
+    background-color: #007da0;
     margin: 0;
     padding: 20px;
 }
@@ -10,21 +10,23 @@ body {
     max-width: 800px;
     margin: 40px auto;
     padding: 30px;
-    background-color: #ffffff;
+    background-color: #79dae9;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+
 }
 
 /* Header Styling */
 h1 {
     text-align: center;
-    color: #607d8b; /* Soft gray-blue */
-    background-color: #eceff1; /* Light gray */
+    color: #6f6d6b; /* Soft gray-blue */
+    background-color: #ffffff; /* Light gray */
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #b0bec5; /* Muted border color */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
 }
 
 /* Form Styling */
@@ -47,18 +49,18 @@ input[type="text"], input[type="number"], select {
 button[type="submit"] {
     grid-column: 1 / span 4;
     padding: 15px;
-    background-color: #90a4ae; /* Soft muted blue-gray */
+    background-color: #486c7f; /* Soft muted blue-gray */
     color: #fff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(144, 164, 174, 0.4); /* Softer shadow */
+    box-shadow: 0 4px 15px rgba(19, 20, 21, 0.4); /* Softer shadow */
     transition: 0.3s;
 }
 
 button[type="submit"]:hover {
-    background-color: #78909c; /* Slightly darker shade on hover */
-    box-shadow: 0 4px 15px rgba(120, 144, 156, 0.6); /* Slightly stronger shadow */
+    background-color: #0c0e0f; /* Slightly darker shade on hover */
+    box-shadow: 0 4px 15px rgba(10, 11, 12, 0.6); /* Slightly stronger shadow */
 }
 
 /* Filters Section Styling */
@@ -81,14 +83,14 @@ button[type="submit"]:hover {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background-color: #b0bec5; /* Softer muted blue */
+    background-color: #486c7f; /* Softer muted blue */
     color: #fff;
     transition: 0.3s;
     box-shadow: 0 4px 15px rgba(176, 190, 197, 0.4);
 }
 
 .filters button:hover {
-    background-color: #90a4ae; /* Slightly darker on hover */
+    background-color: #00000c; /* Slightly darker on hover */
 }
 
 /* Expense List Section */
