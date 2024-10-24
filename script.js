@@ -10,6 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let expenses = JSON.parse(localStorage.getItem('expenses')) || [];
 
+    function addExpense(expense) {
+        const amount = parseFloat(expense.amount);
+        if (amount <= 0) {
+            alert("Please enter a positive amount.");
+            return;
+        }
+        expenses.push(expense);
+        localStorage.setItem('expenses', JSON.stringify(expenses));
+        renderExpenses(expenses);
+        highlightNewItem();
+    }
+    
     function renderExpenses(expensesToRender) {
         expenseList.innerHTML = '';
         let total = 0;
