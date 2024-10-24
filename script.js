@@ -29,17 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         summary.textContent = `Total Expenses: $${total.toFixed(2)}`;
     }
 
-    function addExpense(expense) {
-        const amount = parseFloat(expense.amount);
-        if (amount <= 0) {
-            alert("Please enter a positive amount.");
-            return;
-        }
-        expenses.push(expense);
-        localStorage.setItem('expenses', JSON.stringify(expenses));
-        renderExpenses(expenses);
-        highlightNewItem();
-    }
+   
 
     window.editExpense = (index) => {
         const expense = expenses[index];
