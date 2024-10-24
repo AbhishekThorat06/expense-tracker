@@ -29,7 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
         summary.textContent = `Total Expenses: $${total.toFixed(2)}`;
     }
 
-   
+   function filterExpenses() {
+        const category = filterCategory.value.toLowerCase();
+        const filteredExpenses = expenses.filter(expense => {
+            return (!category || expense.category.toLowerCase().includes(category));
+        });
+        renderExpenses(filteredExpenses);
+        scrollToTop();
+    }
+
 
     window.editExpense = (index) => {
         const expense = expenses[index];
